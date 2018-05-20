@@ -2,63 +2,63 @@
     {
         "Name":"Product1",
         "Price":"25$",
-        "Desc":"",
-        "Catego":"Decoration",
+        "Desc":"Starry night over the rhone Gallery-Wrapped Canvas Art by Vincent Van Gogh 24x32 ",
+        "Catego":"ArtWall",
         "Img":"img-1"
     },
     {
         "Name":"Product2",
         "Price":"12$",
-        "Desc":"",
+        "Desc":"Michael Creese's Feng Shui Koi Fish Gallery Wrapped Floater Framed Canvas",
         "Catego":"Decoration",
         "Img":"img-2"
     },
     {
         "Name":"Product3",
         "Price":"20$",
-        "Desc":"",
+        "Desc":"Katsushika Hokusai 'The Great Wave Off Kanagawa' Floater",
         "Catego":"Decoration",
         "Img":"img-3"
     },
     {
         "Name":"Product4",
         "Price":"125$",
-        "Desc":"",
+        "Desc":"Michael Creese's Feng Shui Koi Fish Gallery Wrapped Floater Framed Canvas",
         "Catego":"Decoration",
         "Img":"img-4"
     },
     {
         "Name":"Product5",
         "Price":"95$",
-        "Desc":"",
-        "Catego":"Decoration",
+        "Desc":"Cora Niele 'Dark Silhouette III' Unwrapped Canvas Print",
+        "Catego":"ArtWall",
         "Img":"img-5"
     },
     {
         "Name":"Product6",
         "Price":"85$",
-        "Desc":"",
+        "Desc":"Michael Creese's Feng Shui Koi Fish Gallery Wrapped Floater Framed Canvas",
         "Catego":"Art",
         "Img":"img-6"
     },
     {
         "Name":"Product7",
         "Price":"77$",
-        "Desc":"",
-        "Catego":"Decoration",
+        "Desc":"Cora Niele 'Dark Silhouette III' Unwrapped Canvas Print",
+        "Catego":"ArtWall",
         "Img":"img-7"
     },
     {
         "Name":"Product8",
         "Price":"55$",
-        "Desc":"",
+        "Desc":"Katsushika Hokusai 'The Great Wave Off Kanagawa' Floater ",
         "Catego":"Decoration",
         "Img":"img-8"
     },
     {
         "Name":"Product9",
         "Price":"95$",
-        "Desc":"",
+        "Desc":"Katsushika Hokusai 'The Great Wave Off Kanagawa' Floater",
         "Catego":"Decoration",
         "Img":"img-10"
     }
