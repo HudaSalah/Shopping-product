@@ -1,3 +1,5 @@
+@import "../sharedStyle.scss";
+
 main
 {
     #formSec
@@ -8,7 +10,41 @@ main
             size: cover;
             position: center;
         }
-        filter: brightness(60%);
+       // filter: brightness(60%);
         height: 100vh;
+        position: relative;  
+.overlay
+{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: #051627;
+    opacity: 0.6;
+}
+
+        .form-control
+        {
+          border-color: $main-color;
+          &:focus{
+            box-shadow:0 0 0 0.1rem $main-color;
+          }
+        }
+
+        .media-body
+        {
+            .btn-primary
+            {
+                background-color:$main-color;
+                color: $white-color;
+                @extend %edit-Btn;
+                &:hover
+                {
+                    background-color:$white-color;
+                    color:$main-color; 
+                }
+            }
+        }
     }
 }
