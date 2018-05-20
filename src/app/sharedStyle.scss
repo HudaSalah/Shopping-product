@@ -1,3 +1,5 @@
+@import '_variables.scss';
+
 $fontRaleway: 'Raleway', sans-serif;
 $fontLato: 'Lato', sans-serif;
 //var colors
@@ -7,6 +9,7 @@ $sec-color:#eaeaf1;
 $footer-bg-color:$main-color;
 $copyright-color:#70344e;
 $white-color:#fefefe;
+$hover-list:#343a40;
 
 %Line-after
 {

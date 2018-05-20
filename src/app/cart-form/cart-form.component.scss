@@ -1,0 +1,14 @@
+main
+{
+    #formSec
+    {
+        background:
+        {
+            image: url("../../assets/Imges/order.jpeg");
+            size: cover;
+            position: center;
+        }
+        filter: brightness(60%);
+        height: 100vh;
+    }
+}

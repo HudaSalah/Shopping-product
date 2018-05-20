@@ -9,13 +9,37 @@ header{
         ul{
             .goRight
             {
-                right: 35px;
                 .btn-outline-primary
                 {
                  @extend %edit-Btn;
                 }
+                .SecDrop{                       
+                    left: -237px !important;
+                }
+                
+                .dropdown-menu
+                {  
+                     background-color: $main-color;
+                     .dropdown-item{
+                        color: $white-color;  
+                        &:hover
+                        {
+                            background-color: $hover-list;
+                        }                      
+                    } 
+                }
             }
-
+            .form-control
+            {
+                width: auto !important;
+                background-color: transparent;
+                border-color: $main-color;
+                color: $main-color;
+                &:focus
+                {
+                    box-shadow: 0 0 0 0.1rem $main-color;
+                }
+            }
             form
             {
                 .btn-outline-success
