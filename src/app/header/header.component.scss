@@ -1,0 +1,29 @@
+@import "../sharedStyle.scss";
+
+header{
+    nav{
+        .btn-outline-primary
+        {
+         @extend %edit-Btn;
+        }
+        ul{
+            .goRight
+            {
+                right: 35px;
+                .btn-outline-primary
+                {
+                 @extend %edit-Btn;
+                }
+            }
+
+            form
+            {
+                .btn-outline-success
+                {
+                    @extend %edit-Btn;
+                }
+            }
+        }
+        
+    }
+}

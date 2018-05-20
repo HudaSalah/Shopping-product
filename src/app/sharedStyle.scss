@@ -1,0 +1,35 @@
+$fontRaleway: 'Raleway', sans-serif;
+$fontLato: 'Lato', sans-serif;
+//var colors
+$main-color:#964468;
+$line-color:#fbca03;
+$sec-color:#eaeaf1;
+$footer-bg-color:$main-color;
+$copyright-color:#70344e;
+$white-color:#fefefe;
+
+%Line-after
+{
+   content: " ";
+    position: absolute;
+    margin: -7px 0;
+    width: 35px;
+    bottom:0;
+    left: 0;
+    border-top: 1px solid #fbca03;
+}
+
+%edit-Btn
+{
+    color:$main-color ;
+    border-color:$main-color ;
+    &:hover
+    {
+        background-color: $main-color;
+        color: $white-color;
+    }
+    &:focus
+    {
+      box-shadow: 0 0 0 0.2rem #70344e;
+    }
+  }

@@ -1,0 +1,78 @@
+@import "../sharedStyle.scss";
+footer
+{
+    background-color: $footer-bg-color;
+    article.aboutDetail
+    {
+        color:$white-color;
+          h4 {
+            font:{
+                   family:$fontRaleway;
+                    size: 16px;
+                 };
+            
+            position: relative;
+              margin-bottom: 22px;
+            
+             &:after
+                {
+                 @extend %Line-after;   
+                }
+        }
+        
+        p{
+            font: {
+                size:12px;
+                family:$fontLato;
+            }
+            
+            i{margin-right: 17px;font-size: 14px;
+            &:hover{
+                color: $line-color;cursor: pointer;transition-duration: 0.5s;}
+            }
+        }
+        
+        table{
+            img{width: 60px;margin: 2px; cursor: pointer;}
+        }
+        
+        table.Aboutus
+        {
+            img{width: 40px;margin: 7px; cursor: pointer;}
+            td{
+                margin-left: 2px;
+                p{
+                    margin:8px;
+                    
+                    &:first-child
+                    {
+                        font-family:$fontRaleway; 
+                        font-size: 10px;
+                        margin-top: -3px;
+                    }
+                    &:nth-child(2)
+                    {
+                        font-size: 9px;
+                    }
+                }
+                
+            }
+        }
+       
+    }
+    
+    .copy
+    {
+        height: 60px;
+        background-color: $copyright-color;
+        p{
+            margin: 0;
+            font-size: 11px;
+            font-family:$fontRaleway;
+            color:gray;
+            span{
+                color:$line-color;
+            }
+        }
+    }
+}
