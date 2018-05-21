@@ -1,0 +1,60 @@
+@import "../sharedStyle.scss";
+
+ 
+.media
+{
+    img{
+        position: relative;
+    }
+    .saleAdv
+    {
+       @extend %saleAdv;
+    }
+}
+.media-body
+{
+    .fa-star{font-size: 12px;}
+    h5{
+        font-family: $fontRaleway;margin-top: 10px;
+    }
+    h6
+    {
+        color:$main-color;
+    }
+    p{
+        font-family: $fontLato;
+        color: #8d949a;font-size: 15px;
+    }
+    
+  .btn-icon
+    {   padding:0;
+        button
+        {
+            @extend %edit-Btn;
+            width: 143px;
+            height: 40px;
+            margin-top: -3px;
+            @media only screen and (max-width:508px)
+            {
+                margin-bottom: 21px;
+                width: 100%;
+            }
+        }
+    
+        .divIcon
+        {
+            background-color:#efeeea;
+                width: 42px;
+                height: 41px;
+                margin-left: 3px;
+                padding: 10px;
+                cursor: pointer;
+
+                i{
+                    &:hover{
+                    color: $main-color;
+                    }
+                }
+        }
+   }
+}

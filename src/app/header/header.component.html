@@ -10,10 +10,7 @@
     <div id="collapseExample" class="collapse navbar-collapse" [ngbCollapse]="isCollapsed">
       <ul class="navbar-nav w-100 d-flex justify-content-between">
         <li>
-            <form class="form-inline my-2 my-lg-0 ml-5">
-              <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
-              <button class="btn btn-outline-success my-2 my-sm-0 ml-2" type="submit">Search</button>
-            </form>
+            <app-search-nav></app-search-nav>
         </li>
         <li>
             <div class="goRight ml-5">
@@ -26,9 +23,9 @@
                 </div>
               </div>
 
-              <div ngbDropdown class="d-inline-block ml-3 SecDrop">
+              <div ngbDropdown class="d-inline-block ml-3">
                 <button class="btn btn-outline-primary" id="dropdownBasic1" ngbDropdownToggle><i class="fa fa-shopping-cart mr-1"></i>Cart</button>
-                <div ngbDropdownMenu aria-labelledby="dropdownBasic1">
+                <div ngbDropdownMenu aria-labelledby="dropdownBasic1" class="SecDrop">
                   
                   <app-cart-product></app-cart-product>
                     

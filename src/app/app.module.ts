@@ -8,6 +8,11 @@ import { FooterComponent } from './footer/footer.component';
 import { HeaderComponent } from './header/header.component';
 import { CartProductComponent } from './cart-product/cart-product.component';
 import { CartFormComponent } from './cart-form/cart-form.component';
+import { SearchNavComponent } from './search-nav/search-nav.component';
+import { ProductListComponent } from './product-list/product-list.component';
+import { ListViewComponent } from './list-view/list-view.component';
+import { GridViewComponent } from './grid-view/grid-view.component';
+import { ProdViewComponent } from './prod-view/prod-view.component';
 
 
 @NgModule({
@@ -16,7 +21,12 @@ import { CartFormComponent } from './cart-form/cart-form.component';
     FooterComponent,
     HeaderComponent,
     CartProductComponent,
-    CartFormComponent
+    CartFormComponent,
+    SearchNavComponent,
+    ProductListComponent,
+    ListViewComponent,
+    GridViewComponent,
+    ProdViewComponent
   ],
   imports: [
     BrowserModule,

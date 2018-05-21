@@ -1,0 +1,15 @@
+@import "../sharedStyle.scss";
+@import "../header/header.component.scss";
+
+.form-control
+{
+    @extend %form-control;
+}
+
+form
+{
+    .btn-outline-success
+    {
+        @extend %edit-Btn;
+    }
+}

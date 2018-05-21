@@ -1,0 +1,106 @@
+@import "../sharedStyle.scss";
+
+main{
+    #ProdItem
+    {
+         //first col
+       .bgimg
+       {
+           img{
+               width: 100%;
+           }
+       }
+       
+       //sec col
+       .arcle
+       {
+            padding: 0;
+            padding-bottom: 21px;
+            border-bottom: solid 1px  #ccd8e4;
+           h4,span
+           {
+               font-family: $fontRaleway;
+           }
+           .stars
+           {
+                   margin-left:auto;
+               @media only screen and (max-width: 992px)
+               {
+                    margin-left:15px;
+               }
+               i{
+                   font-size: 12px;
+                   &:hover{
+                       color: $main-color;
+                   }
+               }
+           }
+           p,h6
+           {
+             font-family:$fontLato;
+             font-size: 12px;   
+           }
+            @media only screen and (max-width: 992px)
+            {
+                margin-top: 22px;
+            }
+       }
+       
+       .price
+       {
+               h3,h5
+               {
+                    color: $main-color;
+               }
+               p{   
+                    font-size: 14px;
+                    font-weight: bolder;
+                }
+               .form-control
+               {
+                   @extend  %form-control;
+                   font-family: $fontLato; 
+                    @media only screen and (max-width:508px)
+                    {
+                        width: 66%;
+                        margin-bottom:12px;
+                   }
+               }
+           }
+       
+       .btn-icon
+       {
+           padding:0;
+           button
+           {
+               @extend %edit-Btn;
+               width: 143px;
+               height: 40px;
+               margin-top: -3px;
+               @media only screen and (max-width:508px)
+               {
+                   margin-bottom: 21px;
+                   width: 100%;
+               }
+           }
+           
+           div
+           {
+            background-color:#efeeea;
+            width: 42px;
+            height: 41px;
+            margin-left: 3px;
+            padding: 10px;
+            text-align: center;
+
+            i{
+                &:hover{
+                    cursor: pointer;
+                    color: $main-color;
+                    }
+            }
+           }
+           
+       }
+    }
+}

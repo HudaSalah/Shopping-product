@@ -1,0 +1,21 @@
+@import "../sharedStyle.scss";
+
+main{
+    #ProdList
+    { @extend %navblog;
+        nav{
+            .witchList
+            {
+                i{
+                    cursor: pointer;
+                    &:hover{color: $main-color;}
+                }
+            }
+        }
+        .pagenate
+        {
+             @extend %pagenate;
+           
+        }
+    }
+}
