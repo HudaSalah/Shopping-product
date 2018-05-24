@@ -92,13 +92,6 @@ main{
             margin-left: 3px;
             padding: 10px;
             text-align: center;
-
-            i{
-                &:hover{
-                    cursor: pointer;
-                    color: $main-color;
-                    }
-            }
            }
            
        }

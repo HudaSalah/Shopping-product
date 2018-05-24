@@ -4,34 +4,30 @@
           <div class="row container-fluid p-5">
             <div class="col-lg-6 col-md-5 col-xs-12">
               <div class="bgimg">
-                <img src="assets/Imges/shop-single-img-1.jpg" />
+                <img src=' {{ComeProduct.image}}' />
               </div>
             </div>
             <div class="col-lg-6 col-md-7 col-xs-12">
               <div class="card-body arcle">
                 <div class="row w-100">
-                  <h4 class="col-lg-8 col-xs-12">White Moose Head</h4>
+                  <h4 class="col-lg-8 col-xs-12">{{ComeProduct.name}}</h4>
                   <div class="col-xs-12 stars text-muted"><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i>
                   </div>
                 </div>
                 <h6 class="mb-2 text-muted">by lora barns</h6>
-                <p class="card-text text-muted pb-0 pt-2">tag as a paragraph container. In plaintext files, there are two common formats, Pre-formatted text will have a newline at the end of every physical line,text will have a newline at the end of every physical line and two newlines at the end of a paragraph of every physical.</p> <span>Material:</span>
+                <p class="card-text text-muted pb-0 pt-2">{{ComeProduct.desc}}</p> <span>Material:</span>
                 <p class="text-muted d-inline">Concrete</p>
               </div>
               <div class="card-body price py-4">
-                <h3 class="d-inline">$86.00</h3>
+                <h3 class="d-inline">{{ComeProduct.price}}</h3>
                 <br/>
                 <label><h5>Quantity : </h5></label>
                 <input class="form-control d-inline mt-4 w-25 text-center" type="number" placeholder="4"/>
               <div class="card-body btn-icon mt-3">
                 <button class="btn" type="button">ADD TO CART</button>
-                <div class="d-inline"><i class="fa fa-heart"></i>
-                </div>
-                <div class="d-inline"><i class="fa fa-eye"></i>
-                </div>
               </div>
               <div class="mt-4">
-                <p class="d-inline">Categories :</p><span class="text-muted">Picture</span>
+                <p class="d-inline">Categories :</p><span class="text-muted">{{ComeProduct.categ}}</span>
                 <br/>
               </div>
             </div>

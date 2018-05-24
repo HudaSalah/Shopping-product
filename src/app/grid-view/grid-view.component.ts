@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { GetProdDataService } from '../get-prod-data.service'; //for import service
+import {RouterModule,Router } from '@angular/router';// for routing
 
 @Component({
   selector: 'app-grid-view',
