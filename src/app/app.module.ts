@@ -2,6 +2,7 @@ import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
 import {NgbModule} from '@ng-bootstrap/ng-bootstrap'; //ng bootstrap
 import { AngularFontAwesomeModule } from 'angular-font-awesome';// font awesom
+import { HttpClientModule } from '@angular/common/http'; //for service
 
 import { AppComponent } from './app.component';
 import { FooterComponent } from './footer/footer.component';
@@ -13,6 +14,7 @@ import { ProductListComponent } from './product-list/product-list.component';
 import { ListViewComponent } from './list-view/list-view.component';
 import { GridViewComponent } from './grid-view/grid-view.component';
 import { ProdViewComponent } from './prod-view/prod-view.component';
+import { GetProdDataService } from './get-prod-data.service'; //for import service
 
 
 @NgModule({
@@ -31,9 +33,10 @@ import { ProdViewComponent } from './prod-view/prod-view.component';
   imports: [
     BrowserModule,
     NgbModule.forRoot(),
-    AngularFontAwesomeModule
+    AngularFontAwesomeModule,
+    HttpClientModule
   ],
-  providers: [],
+  providers: [GetProdDataService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
