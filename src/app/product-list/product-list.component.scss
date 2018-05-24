@@ -6,6 +6,11 @@ main{
         nav{
             .witchList
             {
+                a{
+                    color: $white-color;
+                  &:first-of-type{color:$main-color;}
+                  
+                }
                 i{
                     cursor: pointer;
                     &:hover{color: $main-color;}

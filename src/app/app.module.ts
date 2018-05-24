@@ -3,6 +3,7 @@ import { NgModule } from '@angular/core';
 import {NgbModule} from '@ng-bootstrap/ng-bootstrap'; //ng bootstrap
 import { AngularFontAwesomeModule } from 'angular-font-awesome';// font awesom
 import { HttpClientModule } from '@angular/common/http'; //for service
+import { RouterModule, ActivatedRoute, Routes } from '@angular/router';// for routing
 
 import { AppComponent } from './app.component';
 import { FooterComponent } from './footer/footer.component';
@@ -16,6 +17,16 @@ import { GridViewComponent } from './grid-view/grid-view.component';
 import { ProdViewComponent } from './prod-view/prod-view.component';
 import { GetProdDataService } from './get-prod-data.service'; //for import service
 
+
+//my routes
+
+const routes:Routes=[
+{path:'' , component: ProductListComponent},
+{path:'ProdView' , component:ProdViewComponent},
+{path:'GridView' , component: GridViewComponent},
+{path:'ListView' , component: ListViewComponent},
+{path:'CartForm' , component: CartFormComponent},
+];
 
 @NgModule({
   declarations: [
@@ -33,6 +44,7 @@ import { GetProdDataService } from './get-prod-data.service'; //for import servi
   imports: [
     BrowserModule,
     NgbModule.forRoot(),
+    RouterModule.forRoot(routes),
     AngularFontAwesomeModule,
     HttpClientModule
   ],
