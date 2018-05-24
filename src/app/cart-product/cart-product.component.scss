@@ -1,29 +1,29 @@
 @import "../sharedStyle.scss";
 
 
-.dropdown-item{
-    color: $white-color;  
-    &:hover
-    {
-        background-color: $hover-list;
-    }                      
+// .dropdown-item{
+//     color: $white-color;  
+//     &:hover
+//     {
+//         background-color: $hover-list;
+//     }                      
  
-    .media
-    {
-        img
-        {
-            width: 64px;
-        }
-        .media-body h6 {
-            font-family:$fontRaleway;
-            font-size: 12px;
-            margin-right: 34px;
-        }
+//     .media
+//     {
+//         img
+//         {
+//             width: 64px;
+//         }
+//         .media-body h6 {
+//             font-family:$fontRaleway;
+//             font-size: 12px;
+//             margin-right: 34px;
+//         }
 
-    }
+//     }
 
-    .btn-outline-primary
-    {
-        @extend %edit-Btn;
-    }
-}
+//     .btn-outline-primary
+//     {
+//         @extend %edit-Btn;
+//     }
+// }

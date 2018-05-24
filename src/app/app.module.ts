@@ -4,6 +4,7 @@ import {NgbModule} from '@ng-bootstrap/ng-bootstrap'; //ng bootstrap
 import { AngularFontAwesomeModule } from 'angular-font-awesome';// font awesom
 import { HttpClientModule } from '@angular/common/http'; //for service
 import { RouterModule, ActivatedRoute, Routes } from '@angular/router';// for routing
+import { FormsModule } from '@angular/forms'; // to validate form
 
 import { AppComponent } from './app.component';
 import { FooterComponent } from './footer/footer.component';
@@ -26,6 +27,7 @@ const routes:Routes=[
 {path:'GridView' , component: GridViewComponent},
 {path:'ListView' , component: ListViewComponent},
 {path:'CartForm' , component: CartFormComponent},
+{path:'CartProduct' , component: CartProductComponent}
 ];
 
 @NgModule({
@@ -46,7 +48,8 @@ const routes:Routes=[
     NgbModule.forRoot(),
     RouterModule.forRoot(routes),
     AngularFontAwesomeModule,
-    HttpClientModule
+    HttpClientModule,
+    FormsModule
   ],
   providers: [GetProdDataService],
   bootstrap: [AppComponent]

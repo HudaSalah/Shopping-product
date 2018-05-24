@@ -10,9 +10,17 @@ import {RouterModule,Router } from '@angular/router';// for routing
 export class GridViewComponent implements OnInit {
 
   ProductData:Array<object>;
+  params:object;
   
-    constructor(private Data:GetProdDataService) { 
+    constructor(private Data:GetProdDataService , private router:Router) { 
       this.ProductData=[];
+      this.params={
+        name:"",
+        price:"",
+        desc:"",
+        categ:"",
+        image:""
+      };
     }
   
     getProductData():void{
@@ -24,6 +32,21 @@ export class GridViewComponent implements OnInit {
         err =>{console.log(err);},
         ()=>{}
       );
+    }
+    
+    redirectTo( i:number):void
+    {
+      console.log(i);
+      var AllData = this.ProductData[i];
+      console.log(AllData.Name);
+      this.params={
+        name:AllData.Name,
+        price:AllData.Price,
+        desc:AllData.Desc,
+        categ:AllData.Catego,
+        image:AllData.Img
+      };
+      this.router.navigate(['/ProdView'],{queryParams:this.params})
     }
     
     ngOnInit() {

@@ -27,7 +27,9 @@
                 <button class="btn btn-outline-primary" id="dropdownBasic1" ngbDropdownToggle><i class="fa fa-shopping-cart mr-1"></i>Cart</button>
                 <div ngbDropdownMenu aria-labelledby="dropdownBasic1" class="SecDrop">
                   
-                  <app-cart-product></app-cart-product>
+                  <a class="dropdown-item d-flex justify-content-center" routerLink="/CartProduct">Show products in cart</a>
+                  <div class="dropdown-divider"></div>
+                  <a class="dropdown-item d-flex justify-content-center" routerLink="/CartForm"> Submit Order </a>
                     
                 </div>
               </div>

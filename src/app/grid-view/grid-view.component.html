@@ -7,7 +7,7 @@
         </div>
       </figure>
       <figcaption>
-        <p class="d-inline">{{prod.Name}}</p><i class="fa fa-eye"  routerLink="/ProdView"></i>
+        <p class="d-inline">{{prod.Name}}</p><i class="fa fa-eye"  routerLink="/ProdView" (click)="redirectTo(i)"></i>
         <p class="font-weight-bold">{{prod.Price}}</p>
       </figcaption>
     </div>
