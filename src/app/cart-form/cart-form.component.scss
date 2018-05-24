@@ -26,11 +26,7 @@ main
 
         .form-control
         {
-          border-color: $main-color;
-          color:$main-color; 
-          &:focus{
-            box-shadow:0 0 0 0.1rem $main-color;
-          }
+            @extend %form-control;
         }
 
         .media-body

@@ -1,26 +1,36 @@
-<!-- <a class="dropdown-item pb-3 text-white" href="#">
-  <div class="media">
-    <img class="align-self-start mr-3" src="assets/Imges/widget-img-2.jpg" alt="Generic placeholder image">
-    <div class="media-body">
-      <article class="mt-0">
-        <h6 class="d-inline" id="name">Wodeen Vase</h6><i class="fa fa-trash"></i>
-        <p>$50.00</p>
-      </article>
-    </div>
-  </div>
-</a>
-<div class="dropdown-divider"></div>
-<a class="dropdown-item pb-3 text-white" href="#">
-  <div class="media">
-    <img class="align-self-start mr-3" src="assets/Imges/widget-img-3.jpg" alt="Generic placeholder image">
-    <div class="media-body">
-      <article class="mt-0">
-        <h6 class="d-inline">Wodeen Vase</h6><i class="fa fa-trash"></i>
-        <p>$50.00</p>
-      </article>
-    </div>
-  </div>
-</a>
- -->
+<main>
+  <section id="CartProd">
+  <div class="container">
+      <div class="d-flex flex-column align-items-center justify-content-center w-100 h-100">
+          <div class="overCar col-md-9 pb-4 my-4">
 
- <p>hello</p>
+            
+            <div class="row w-100 media mt-4">
+                <img class="col-md-4 col-xs-12 align-self-start mr-3 w-100" src= "assets/Imges/img-1.jpg" alt="placeholder image">
+                <div class="col-md-8 col-xs-12 media-body">
+                  <h5>Name</h5>
+                  <h6>price</h6>
+                  <p>desc</p> 
+                    <div class="card-body btn-icon mt-3">
+                      <div class="mb-2 mb-4">
+                          <div class="d-inline divIcon">
+                            <label>Qantity :</label>  <input class="form-control d-inline mt-4 w-50 text-center bg-transparent" type="number" min="1" placeholder="1"/>
+                          </div>
+                          <div class="d-inline divIcon" routerLink="/ProdView"><i class="fa fa-eye"></i>
+                          </div>
+                          <div class="d-inline divIcon"><i class="fa fa-trash"></i>
+                          </div>
+                      </div>              
+                  </div>
+                </div>
+            </div>
+
+
+            <div class="media-body pt-3 d-flex justify-content-center">
+              <button type="submit" class="btn btn-primary w-50" routerLink="/CartForm">Submit Order</button>
+            </div>
+          </div>
+      </div>
+  </div>
+  </section>
+</main>

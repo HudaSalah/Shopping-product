@@ -1,29 +1,43 @@
 @import "../sharedStyle.scss";
+@import "../list-view/List-view.component.scss";
 
+#CartProd
+{
+    
+    background:
+    {
+        image: url("../../assets/Imges/cart.jpeg");
+        size: cover;
+        position: center;
+    }
+ .overCar
+ {
+     border: solid 1px $main-color;
+     border-radius: 5px;
+     background-color: #627178b5;
 
-// .dropdown-item{
-//     color: $white-color;  
-//     &:hover
-//     {
-//         background-color: $hover-list;
-//     }                      
- 
-//     .media
-//     {
-//         img
-//         {
-//             width: 64px;
-//         }
-//         .media-body h6 {
-//             font-family:$fontRaleway;
-//             font-size: 12px;
-//             margin-right: 34px;
-//         }
+     h5{color: #fbb16c;}
+     h6{color: #5ff2e7;}
+     p{color:#171616;}
 
-//     }
+     .form-control{color: $white-color;}
+     .btn-primary
+     {
+         @extend %edit-Btn;
+         color: $white-color;
+         background-color: $main-color;
+         &:hover{
+             background-color: $white-color;
+             color:$main-color;
+         }
+     }
 
-//     .btn-outline-primary
-//     {
-//         @extend %edit-Btn;
-//     }
-// }
+     .divIcon
+     {
+         background-color: transparent;
+         i{font-size:30px;color: #d4ad11;&:hover{color:  $main-color;} }
+         label{color: $white-color; font-size: 19px;}
+     }
+ }
+
+}
