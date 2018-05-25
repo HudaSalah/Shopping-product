@@ -17,6 +17,15 @@ export class CartProductComponent implements OnInit {
     // this.ProdData.sendItem.subscribe( (AllProd)=> {console.log(AllProd);} );    
    }
 
+   delFromCart(O:object):void
+   {
+     let k = this.all.indexOf(O);
+     console.log(k);
+     for(let i=0 ; i<this.all.length; i++)
+      {
+        this.all.splice(k,1);
+      }
+   }
    
    redirectTo( i:object):void
    {
