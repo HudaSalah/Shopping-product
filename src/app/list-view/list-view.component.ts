@@ -1,6 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { GetProdDataService } from '../get-prod-data.service'; //for import service
 import {RouterModule,Router } from '@angular/router';// for routing
+import { ProductServiceService } from '../product-service.service';
 
 @Component({
   selector: 'app-list-view',
@@ -12,7 +13,7 @@ export class ListViewComponent implements OnInit {
   ProductData:Array<object>;
   params:object;
 
-  constructor(private Data:GetProdDataService , private router:Router) { 
+  constructor(private Data:GetProdDataService , private router:Router, private ProdData:ProductServiceService) { 
     this.ProductData=[];
     this.params={
       name:"",
@@ -34,18 +35,10 @@ export class ListViewComponent implements OnInit {
     );
   }
   
-  redirectTo( i:number):void
+  redirectTo( i:object):void
   {
     console.log(i);
-    var AllData = this.ProductData[i];
-    console.log(AllData.Name);
-    this.params={
-      name:AllData.Name,
-      price:AllData.Price,
-      desc:AllData.Desc,
-      categ:AllData.Catego,
-      image:AllData.Img
-    };
+    this.params =  i ;
     this.router.navigate(['/ProdView'],{queryParams:this.params})
   }
 

@@ -17,7 +17,7 @@ import { ListViewComponent } from './list-view/list-view.component';
 import { GridViewComponent } from './grid-view/grid-view.component';
 import { ProdViewComponent } from './prod-view/prod-view.component';
 import { GetProdDataService } from './get-prod-data.service'; //for import service
-
+import { ProductServiceService } from './product-service.service';
 
 //my routes
 
@@ -51,7 +51,7 @@ const routes:Routes=[
     HttpClientModule,
     FormsModule
   ],
-  providers: [GetProdDataService],
+  providers: [GetProdDataService,ProductServiceService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

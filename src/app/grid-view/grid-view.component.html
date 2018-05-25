@@ -3,11 +3,11 @@
       <figure>
         <img src= {{prod.Img}} />
         <div class="overlay d-flex align-items-center justify-content-center">
-          <button class="btn">ADD TO CART</button>
+          <button class="btn" (click)="sendDataToCart(prod)">ADD TO CART</button>
         </div>
       </figure>
       <figcaption>
-        <p class="d-inline">{{prod.Name}}</p><i class="fa fa-eye"  routerLink="/ProdView" (click)="redirectTo(i)"></i>
+        <p class="d-inline">{{prod.Name}}</p><i class="fa fa-eye"  routerLink="/ProdView" (click)="redirectTo(prod)"></i>
         <p class="font-weight-bold">{{prod.Price}}</p>
       </figcaption>
     </div>
