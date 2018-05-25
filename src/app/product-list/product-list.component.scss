@@ -6,6 +6,10 @@ main{
         nav{
             .witchList
             {
+                @media screen and (max-width:767px)
+                {
+                    display: none;
+                }
                 a{
                     color: $white-color;
                   &:first-of-type{color:$main-color;}

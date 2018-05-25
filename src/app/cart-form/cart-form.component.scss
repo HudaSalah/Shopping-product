@@ -12,7 +12,11 @@ main
         }
        // filter: brightness(60%);
         height: 100vh;
-        position: relative;  
+        position: relative; 
+        div:nth-child(2)
+        {
+            box-sizing: content-box;
+        } 
 .overlay
 {
     position: absolute;

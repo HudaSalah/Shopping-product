@@ -10,8 +10,12 @@
                     <i class="fa fa-align-justify ml-5 pr-2"> List View </i>
                     </div>
                 </nav>
+
+                <form class="form-inline my-2 my-lg-0">
+                  <input class="form-control mr-sm-2" type="search"  name="search" [(ngModel)]="filter"  placeholder="Search" aria-label="Search">
+                </form>
   
-  <div class="row w-100 media mt-4" *ngFor="let prod of ProductData; let i=index;">
+  <div class="row w-100 media mt-4" *ngFor="let prod of ProductData | filter:filter; let i=index;">
       <img class="col-md-4 col-xs-12 align-self-start mr-3 w-100" src= {{prod.Img}} alt="placeholder image">
       <div class="col-md-8 col-xs-12 media-body">
         <h5>{{prod.Name}}</h5>
@@ -24,7 +28,7 @@
                 <div class="d-inline divIcon" routerLink="/ProdView"><i class="fa fa-eye" (click)="redirectTo(prod)"></i>
                 </div>
             </div>
-          <button class="btn" type="button">ADD TO CART</button>
+          <button class="btn" type="button" (click)="sendDataToCart(prod)">ADD TO CART</button>
           
         </div>
       </div>

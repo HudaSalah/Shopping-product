@@ -1,5 +1,9 @@
+<form class="form-inline my-2 my-lg-0">
+  <input class="form-control mr-sm-2" type="search"  name="search" [(ngModel)]="filter"  placeholder="Search" aria-label="Search">
+</form>
+
 <div class="row w-100" >
-    <div class="col-md-4 col-xs-12" *ngFor="let prod of ProductData; let i=index;">
+    <div class="col-md-4 col-xs-12" *ngFor="let prod of ProductData | filter:filter; let i=index;">
       <figure>
         <img src= {{prod.Img}} />
         <div class="overlay d-flex align-items-center justify-content-center">

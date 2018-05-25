@@ -1,62 +1,62 @@
 [
     {
-        "Name":"Product1",
+        "Name":"Furniture & Mattresses",
         "Price":"25$",
         "Desc":"Starry night over the rhone Gallery-Wrapped Canvas Art by Vincent Van Gogh",
         "Catego":"ArtWall",
         "Img":"assets/Imges/img-1.jpg"
     },
     {
-        "Name":"Product2",
+        "Name":"Home & Living Furniture",
         "Price":"12$",
         "Desc":"Michael Creese's Feng Shui Koi Fish Gallery Wrapped Floater Framed Canvas",
         "Catego":"Decoration",
         "Img":"assets/Imges/img-2.jpg"
     },
     {
-        "Name":"Product3",
+        "Name":"Live Style Mocka",
         "Price":"20$",
         "Desc":"Katsushika Hokusai 'The Great Wave Off Kanagawa' Floater",
         "Catego":"Decoration",
         "Img":"assets/Imges/img-3.jpg"
     },
     {
-        "Name":"Product4",
+        "Name":"Dicas para Decoração",
         "Price":"125$",
         "Desc":"Michael Creese's Feng Shui Koi Fish Gallery Wrapped Floater Framed Canvas",
         "Catego":"Decoration",
         "Img":"assets/Imges/img-4.jpg"
     },
     {
-        "Name":"Product5",
+        "Name":"Westing prod",
         "Price":"95$",
         "Desc":"Cora Niele 'Dark Silhouette III' Unwrapped Canvas Print",
         "Catego":"ArtWall",
         "Img":"assets/Imges/img-5.jpg"
     },
     {
-        "Name":"Product6",
+        "Name":"Customized Interiors",
         "Price":"85$",
         "Desc":"Michael Creese's Feng Shui Koi Fish Gallery Wrapped Floater Framed Canvas",
         "Catego":"Art",
         "Img":"assets/Imges/img-6.jpg"
     },
     {
-        "Name":"Product7",
+        "Name":"M17 faceted wooden",
         "Price":"77$",
         "Desc":"Cora Niele 'Dark Silhouette III' Unwrapped Canvas Print",
         "Catego":"ArtWall",
         "Img":"assets/Imges/img-7.jpg"
     },
     {
-        "Name":"Product8",
+        "Name":"Modules Made",
         "Price":"55$",
         "Desc":"Katsushika Hokusai 'The Great Wave Off Kanagawa' Floater ",
         "Catego":"Decoration",
         "Img":"assets/Imges/img-8.jpg"
     },
     {
-        "Name":"Product9",
+        "Name":"Transforming Pull",
         "Price":"95$",
         "Desc":"Katsushika Hokusai 'The Great Wave Off Kanagawa' Floater",
         "Catego":"Decoration",

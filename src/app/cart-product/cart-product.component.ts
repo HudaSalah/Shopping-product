@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit} from '@angular/core';
 import {RouterModule,Router } from '@angular/router';// for routing
 import { ProductServiceService } from '../product-service.service';
 
@@ -8,7 +8,8 @@ import { ProductServiceService } from '../product-service.service';
   styleUrls: ['./cart-product.component.scss']
 })
 export class CartProductComponent implements OnInit {
-  
+
+
   params:object;  
   all:Array<object> = this.ProdData.sendItem;
   quantity:any;
@@ -16,9 +17,10 @@ export class CartProductComponent implements OnInit {
   constructor(private ProdData:ProductServiceService , private router:Router) {
     console.log(this.all); 
   this.quantity = this.ProdData.Qty;  
-    // this.ProdData.sendItem.subscribe( (AllProd)=> {console.log(AllProd);} );    
+    // this.ProdData.sendItem.subscribe( (AllProd)=> {console.log(AllProd);} );  
    }
 
+   //delete this prod
    delFromCart(O:object):void
    {
      let k = this.all.indexOf(O);
@@ -29,6 +31,7 @@ export class CartProductComponent implements OnInit {
       }
    }
    
+   //view detail
    redirectTo( i:object):void
    {
      console.log(i);
@@ -37,6 +40,7 @@ export class CartProductComponent implements OnInit {
      this.router.navigate(['/ProdView'],{queryParams:this.params})
    }
 
+   //get quantity
    onKey(event:any):void{
     this.quantity = event.target.value;
     this.ProdData.Qty = this.quantity;

@@ -1,5 +1,41 @@
 @import "../sharedStyle.scss";
 
+.form-control
+{
+    @extend %form-control;
+}
+
+form
+{   position: absolute;
+    @media screen and (min-width: 992px)
+    {
+        top: -70px;
+        left: -51px;
+    }
+
+    @media screen and (min-width:768px) and (max-width: 992px)
+    {
+        top: -78px;
+        left: 340px;
+    }
+
+    @media screen and (min-width:400px) and (max-width:768px)
+    {
+        top: -77px;
+        left: 267px;
+    }
+
+    @media screen and (min-width:368px) and (max-width:400px)
+    {
+        left: 28px;
+    }
+
+    @media screen and (max-width:368px)
+    {
+        display: none;
+    }
+
+}
  figure
  { 
      @extend %figure;
