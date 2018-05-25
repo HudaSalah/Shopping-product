@@ -24,7 +24,7 @@
                 <label><h5>Quantity : </h5></label>
                 <input class="form-control d-inline mt-4 w-25 text-center" type="number" min="0" placeholder="4"/>
               <div class="card-body btn-icon mt-3">
-                <button class="btn" type="button">ADD TO CART</button>
+                <button class="btn" type="button" (click)="sendDataToCart(ComeProduct)">ADD TO CART</button>
               </div>
               <div class="mt-4">
                 <p class="d-inline">Categories :</p><span class="text-muted">{{ComeProduct.Catego}}</span>

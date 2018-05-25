@@ -10,9 +10,9 @@ import { ProductServiceService } from '../product-service.service';
 })
 export class GridViewComponent implements OnInit {
 
-  ProductData:Array<object>;
-  params:object;
-  AllProd :Array<object>;
+  ProductData:Array<object>; // gay mn json
+  params:object; // htrp7 l view details
+  AllProd:Array<object>;
 
     constructor(private Data:GetProdDataService , private router:Router, private ProdData:ProductServiceService) { 
       this.ProductData=[];
@@ -23,7 +23,7 @@ export class GridViewComponent implements OnInit {
         categ:"",
         image:""
       };
-      this.AllProd =[];
+      this.AllProd=[];
     }
   
     getProductData():void{
@@ -44,19 +44,13 @@ export class GridViewComponent implements OnInit {
       this.router.navigate(['/ProdView'],{queryParams:this.params})
     }
 
-   
 
-    sendDataToCart( i:object):void
+    sendDataToCart(i:object):void
     {
-      (this.AllProd).push(i);
+      this.AllProd.push(i);
       console.log(this.AllProd);
+      this.ProdData.sendItem=this.AllProd;
       // this.ProdData.sendItem.emit(this.AllProd);
-      this.ProdData.sendItem = (this.AllProd);
-    }
-
-    getDataFromView():Array<object>
-    {
-      return this.AllProd;
     }
     
     ngOnInit() {
