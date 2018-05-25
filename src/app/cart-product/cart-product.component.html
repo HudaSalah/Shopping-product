@@ -14,7 +14,7 @@
                     <div class="card-body btn-icon mt-3">
                       <div class="mb-2 mb-4">
                           <div class="d-inline divIcon">
-                            <label>Qantity :</label>  <input class="form-control d-inline mt-4 w-50 text-center bg-transparent" type="number" min="1" placeholder="1"/>
+                            <label>Qantity :</label>  <input class="form-control d-inline mt-4 w-50 text-center bg-transparent" type="number" min="1" (click)="onKey($event)" />
                           </div>
                           <div class="d-inline divIcon"><i class="fa fa-eye" routerLink="/ProdView" (click)="redirectTo(prod)"></i>
                           </div>

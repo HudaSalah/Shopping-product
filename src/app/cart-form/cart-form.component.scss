@@ -27,6 +27,7 @@ main
         .form-control
         {
             @extend %form-control;
+            background-color: white;
         }
 
         .media-body

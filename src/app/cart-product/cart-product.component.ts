@@ -11,9 +11,11 @@ export class CartProductComponent implements OnInit {
   
   params:object;  
   all:Array<object> = this.ProdData.sendItem;
+  quantity:any;
 
   constructor(private ProdData:ProductServiceService , private router:Router) {
     console.log(this.all); 
+  this.quantity = this.ProdData.Qty;  
     // this.ProdData.sendItem.subscribe( (AllProd)=> {console.log(AllProd);} );    
    }
 
@@ -31,11 +33,17 @@ export class CartProductComponent implements OnInit {
    {
      console.log(i);
      this.params= i;
+     this.ProdData.Qty = this.quantity;
      this.router.navigate(['/ProdView'],{queryParams:this.params})
    }
 
+   onKey(event:any):void{
+    this.quantity = event.target.value;
+    this.ProdData.Qty = this.quantity;
+        console.log(this.quantity);
+  }
+
   ngOnInit() {
-  
   }
 
 }

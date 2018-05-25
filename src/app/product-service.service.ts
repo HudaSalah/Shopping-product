@@ -8,6 +8,6 @@ export class ProductServiceService {
 
   // sendItem = new EventEmitter<object[]>();
   sendItem:Array<object>;
-  
+  Qty:any;
   constructor() { }
 }
