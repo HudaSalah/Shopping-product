@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import {RouterModule,Router } from '@angular/router';// for routing
 import { ProductServiceService } from '../product-service.service';
 
 @Component({
@@ -8,14 +9,21 @@ import { ProductServiceService } from '../product-service.service';
 })
 export class CartProductComponent implements OnInit {
   
-  all:Array<object>= this.ProdData.sendItem;
-  constructor(private ProdData:ProductServiceService) {
+  params:object;  
+  all:Array<object> = this.ProdData.sendItem;
+
+  constructor(private ProdData:ProductServiceService , private router:Router) {
     console.log(this.all); 
     // this.ProdData.sendItem.subscribe( (AllProd)=> {console.log(AllProd);} );    
    }
 
    
-   
+   redirectTo( i:object):void
+   {
+     console.log(i);
+     this.params= i;
+     this.router.navigate(['/ProdView'],{queryParams:this.params})
+   }
 
   ngOnInit() {
   
