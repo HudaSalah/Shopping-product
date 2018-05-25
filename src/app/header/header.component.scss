@@ -9,14 +9,12 @@ header{
         ul{
             .goRight
             {
-                .SecDrop{   
-                    @media only screen and (min-width:992px) {
-                        left: -112px !important;
-                    }   
-
-                    @media only screen and (max-width:476px) {
-                        left: -115px !important;
-                    } 
+                .SecDrop1
+                {
+                    left: -100px !important;
+                }
+                .SecDrop{ 
+                    left: -141px !important;   
                 }
                 
                 .dropdown-menu

@@ -1,22 +1,22 @@
 <header>
   <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
     <div class="container">
-      <a class="navbar-brand"  routerLink="">HOME</a>
-      <button type="button" class="btn btn-outline-primary d-lg-none" (click)="isCollapsed = !isCollapsed"
-      aria-expanded="false" [attr.aria-expanded]="!isCollapsed" aria-controls="collapseExample">
+      <a class="navbar-brand" routerLink="">HOME</a>
+      <button type="button" class="btn btn-outline-primary d-lg-none" (click)="isCollapsed = !isCollapsed" aria-expanded="false"
+        [attr.aria-expanded]="!isCollapsed" aria-controls="collapseExample">
       <span class="navbar-toggler-icon"></span>
         </button>
-        
-    <div id="collapseExample" class="collapse navbar-collapse" [ngbCollapse]="isCollapsed">
-      <ul class="navbar-nav w-100 d-flex justify-content-between">
-        <!-- <li>
+
+      <div id="collapseExample" class="collapse navbar-collapse" [ngbCollapse]="isCollapsed">
+        <ul class="navbar-nav w-100 d-flex justify-content-between">
+          <!-- <li>
             <app-search-nav></app-search-nav>
         </li> -->
-        <li class="ml-auto">
+          <li class="ml-auto">
             <div class="goRight ml-5">
               <div ngbDropdown class="d-inline-block">
-                <button class="btn btn-outline-primary" id="dropdownBasic1" ngbDropdownToggle><i class="fa fa-cog mr-1"></i>Setting</button>
-                <div ngbDropdownMenu aria-labelledby="dropdownBasic1">
+                <button class="btn btn-outline-primary" id="dropdownBasic1" ngbDropdownToggle><i class="fa fa-cog mr-1"></i></button>
+                <div ngbDropdownMenu aria-labelledby="dropdownBasic1" class="SecDrop1">
                   <button class="dropdown-item">View/Edit profile</button>
                   <div class="dropdown-divider"></div>
                   <button class="dropdown-item">Sign Out</button>
@@ -24,19 +24,19 @@
               </div>
 
               <div ngbDropdown class="d-inline-block ml-3">
-                <button class="btn btn-outline-primary" id="dropdownBasic1" ngbDropdownToggle><i class="fa fa-shopping-cart mr-1"></i>Cart</button>
+                <button class="btn btn-outline-primary" id="dropdownBasic1" ngbDropdownToggle><i class="fa fa-shopping-cart mr-1"></i></button>
                 <div ngbDropdownMenu aria-labelledby="dropdownBasic1" class="SecDrop">
-                  
+
                   <a class="dropdown-item d-flex justify-content-center" routerLink="/CartProduct">Show products in cart</a>
                   <div class="dropdown-divider"></div>
                   <a class="dropdown-item d-flex justify-content-center" routerLink="/CartForm"> Submit Order </a>
-                    
+
                 </div>
               </div>
             </div>
-        </li>
-      </ul>
+          </li>
+        </ul>
+      </div>
     </div>
-  </div>
   </nav>
 </header>

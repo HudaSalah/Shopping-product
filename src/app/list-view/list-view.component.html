@@ -1,72 +1,72 @@
 <main>
   <section id="ProdList">
     <div class="container h-100">
-        <div class="d-flex flex-column align-items-center justify-content-center w-100 h-100">
-            <div class="col-md-9 pb-4 mt-4">
-                <nav class="navbar navbar-expand-lg bg-dark mb-3 text-white">
-                  <p class="my-2">Showing 1-12 from All Items</p>
-                  <div class="witchList ml-auto">
-                    <a routerLink=""><i class="fa fa-th-large pr-2"> Grid View</i></a>
-                    <i class="fa fa-align-justify ml-5 pr-2"> List View </i>
-                    </div>
-                </nav>
-
-                <form class="form-inline my-2 my-lg-0">
-                  <input class="form-control mr-sm-2" type="search"  name="search" [(ngModel)]="filter"  placeholder="Search" aria-label="Search">
-                </form>
-  
-  <div class="row w-100 media mt-4" *ngFor="let prod of ProductData | filter:filter; let i=index;">
-      <img class="col-md-4 col-xs-12 align-self-start mr-3 w-100" src= {{prod.Img}} alt="placeholder image">
-      <div class="col-md-8 col-xs-12 media-body">
-        <h5>{{prod.Name}}</h5>
-        <h6>{{prod.Price}}</h6>
-        <p>{{prod.Desc}}</p> 
-          <div class="card-body btn-icon mt-3">
-            <div class="mb-2 w-50 mb-4">
-                <div class="d-inline divIcon"><i class="fa fa-heart"></i>
-                </div>
-                <div class="d-inline divIcon" routerLink="/ProdView"><i class="fa fa-eye" (click)="redirectTo(prod)"></i>
-                </div>
+      <div class="d-flex flex-column align-items-center justify-content-center w-100 h-100">
+        <div class="col-md-9 pb-4 mt-4">
+          <nav class="navbar navbar-expand-lg bg-dark mb-3 text-white">
+            <p class="my-2">Showing 1-12 from All Items</p>
+            <div class="witchList ml-auto">
+              <a routerLink=""><i class="fa fa-th-large pr-2"> Grid View</i></a>
+              <i class="fa fa-align-justify ml-5 pr-2"> List View </i>
             </div>
-          <button class="btn" type="button" (click)="sendDataToCart(prod)">ADD TO CART</button>
-          
-        </div>
-      </div>
-  </div>
+          </nav>
+
+          <form class="form-inline my-2 my-lg-0">
+            <input class="form-control mr-sm-2" type="search" name="search" [(ngModel)]="filter" placeholder="Search" aria-label="Search">
+          </form>
+
+          <div class="row w-100 media mt-4" *ngFor="let prod of ProductData | filter:filter; let i=index;">
+            <img class="col-md-4 col-xs-12 align-self-start mr-3 w-100" src={ {prod.Img}} alt="placeholder image">
+            <div class="col-md-8 col-xs-12 media-body">
+              <h5>{{prod.Name}}</h5>
+              <h6>{{prod.Price}}</h6>
+              <p>{{prod.Desc}}</p>
+              <div class="card-body btn-icon mt-3">
+                <div class="mb-2 w-50 mb-4">
+                  <div class="d-inline divIcon"><i class="fa fa-heart"></i>
+                  </div>
+                  <div class="d-inline divIcon" routerLink="/ProdView"><i class="fa fa-eye" (click)="redirectTo(prod)"></i>
+                  </div>
+                </div>
+                <button class="btn" type="button" (click)="sendDataToCart(prod)">ADD TO CART</button>
+
+              </div>
+            </div>
+          </div>
 
 
 
 
-   <!-- pagenation -->
-   <div class="row w-100 justify-content-center pt-5">
-    <nav aria-label="Page navigation example" class="pagenate justify-content-center">
-      <ul class="pagination">
-        <li class="page-item mr-3">
-          <a class="page-link" href="#" tabindex="-1">
+          <!-- pagenation -->
+          <div class="row w-100 justify-content-center pt-5">
+            <nav aria-label="Page navigation example" class="pagenate justify-content-center">
+              <ul class="pagination">
+                <li class="page-item mr-3">
+                  <a class="page-link" href="#" tabindex="-1">
             <img src="assets/Imges/icons/left.png" />Prev</a>
-        </li>
-        <li class="page-item"><a class="page-link" href="#">1</a>
-        </li>
-        <li class="page-item"><a class="page-link" href="#">2</a>
-        </li>
-        <li class="page-item"><a class="page-link" href="#">3</a>
-        </li>
-        <li class="page-item"><a class="page-link" href="#">4</a>
-        </li>
-        <li class="page-item"><a class="page-link" href="#">5</a>
-        </li>
-        <li class="page-item ml-3">
-          <a class="page-link" href="#">
+                </li>
+                <li class="page-item"><a class="page-link" href="#">1</a>
+                </li>
+                <li class="page-item"><a class="page-link" href="#">2</a>
+                </li>
+                <li class="page-item"><a class="page-link" href="#">3</a>
+                </li>
+                <li class="page-item"><a class="page-link" href="#">4</a>
+                </li>
+                <li class="page-item"><a class="page-link" href="#">5</a>
+                </li>
+                <li class="page-item ml-3">
+                  <a class="page-link" href="#">
             <img src="assets/Imges/icons/right.png" />
           </a>
-        </li>
-      </ul>
-    </nav>
-  </div>
-</div>
+                </li>
+              </ul>
+            </nav>
+          </div>
+        </div>
 
 
-</div>
-</div>
-</section>
+      </div>
+    </div>
+  </section>
 </main>

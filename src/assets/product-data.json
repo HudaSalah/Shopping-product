@@ -1,65 +1,65 @@
 [
     {
-        "Name":"Furniture & Mattresses",
-        "Price":"25$",
-        "Desc":"Starry night over the rhone Gallery-Wrapped Canvas Art by Vincent Van Gogh",
-        "Catego":"ArtWall",
-        "Img":"assets/Imges/img-1.jpg"
+        "Name": "Furniture & Mattresses",
+        "Price": "25$",
+        "Desc": "Starry night over the rhone Gallery-Wrapped Canvas Art by Vincent Van Gogh",
+        "Catego": "ArtWall",
+        "Img": "assets/Imges/img-1.jpg"
     },
     {
-        "Name":"Home & Living Furniture",
-        "Price":"12$",
-        "Desc":"Michael Creese's Feng Shui Koi Fish Gallery Wrapped Floater Framed Canvas",
-        "Catego":"Decoration",
-        "Img":"assets/Imges/img-2.jpg"
+        "Name": "Home & Living Furniture",
+        "Price": "12$",
+        "Desc": "Michael Creese's Feng Shui Koi Fish Gallery Wrapped Floater Framed Canvas",
+        "Catego": "Decoration",
+        "Img": "assets/Imges/img-2.jpg"
     },
     {
-        "Name":"Live Style Mocka",
-        "Price":"20$",
-        "Desc":"Katsushika Hokusai 'The Great Wave Off Kanagawa' Floater",
-        "Catego":"Decoration",
-        "Img":"assets/Imges/img-3.jpg"
+        "Name": "Live Style Mocka",
+        "Price": "20$",
+        "Desc": "Katsushika Hokusai 'The Great Wave Off Kanagawa' Floater",
+        "Catego": "Decoration",
+        "Img": "assets/Imges/img-3.jpg"
     },
     {
-        "Name":"Dicas para Decoração",
-        "Price":"125$",
-        "Desc":"Michael Creese's Feng Shui Koi Fish Gallery Wrapped Floater Framed Canvas",
-        "Catego":"Decoration",
-        "Img":"assets/Imges/img-4.jpg"
+        "Name": "Dicas para Decoração",
+        "Price": "125$",
+        "Desc": "Michael Creese's Feng Shui Koi Fish Gallery Wrapped Floater Framed Canvas",
+        "Catego": "Decoration",
+        "Img": "assets/Imges/img-4.jpg"
     },
     {
-        "Name":"Westing prod",
-        "Price":"95$",
-        "Desc":"Cora Niele 'Dark Silhouette III' Unwrapped Canvas Print",
-        "Catego":"ArtWall",
-        "Img":"assets/Imges/img-5.jpg"
+        "Name": "Westing prod",
+        "Price": "95$",
+        "Desc": "Cora Niele 'Dark Silhouette III' Unwrapped Canvas Print",
+        "Catego": "ArtWall",
+        "Img": "assets/Imges/img-5.jpg"
     },
     {
-        "Name":"Customized Interiors",
-        "Price":"85$",
-        "Desc":"Michael Creese's Feng Shui Koi Fish Gallery Wrapped Floater Framed Canvas",
-        "Catego":"Art",
-        "Img":"assets/Imges/img-6.jpg"
+        "Name": "Customized Interiors",
+        "Price": "85$",
+        "Desc": "Michael Creese's Feng Shui Koi Fish Gallery Wrapped Floater Framed Canvas",
+        "Catego": "Art",
+        "Img": "assets/Imges/img-6.jpg"
     },
     {
-        "Name":"M17 faceted wooden",
-        "Price":"77$",
-        "Desc":"Cora Niele 'Dark Silhouette III' Unwrapped Canvas Print",
-        "Catego":"ArtWall",
-        "Img":"assets/Imges/img-7.jpg"
+        "Name": "M17 faceted wooden",
+        "Price": "77$",
+        "Desc": "Cora Niele 'Dark Silhouette III' Unwrapped Canvas Print",
+        "Catego": "ArtWall",
+        "Img": "assets/Imges/img-7.jpg"
     },
     {
-        "Name":"Modules Made",
-        "Price":"55$",
-        "Desc":"Katsushika Hokusai 'The Great Wave Off Kanagawa' Floater ",
-        "Catego":"Decoration",
-        "Img":"assets/Imges/img-8.jpg"
+        "Name": "Modules Made",
+        "Price": "55$",
+        "Desc": "Katsushika Hokusai 'The Great Wave Off Kanagawa' Floater ",
+        "Catego": "Decoration",
+        "Img": "assets/Imges/img-8.jpg"
     },
     {
-        "Name":"Transforming Pull",
-        "Price":"95$",
-        "Desc":"Katsushika Hokusai 'The Great Wave Off Kanagawa' Floater",
-        "Catego":"Decoration",
-        "Img":"assets/Imges/img-10.jpg"
+        "Name": "Transforming Pull",
+        "Price": "95$",
+        "Desc": "Katsushika Hokusai 'The Great Wave Off Kanagawa' Floater",
+        "Catego": "Decoration",
+        "Img": "assets/Imges/img-10.jpg"
     }
 ]

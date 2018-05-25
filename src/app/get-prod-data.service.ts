@@ -9,8 +9,7 @@ export class GetProdDataService {
 
   constructor(private http: HttpClient) { }
 
-  getData(Path:string):Observable<any>
-  {
+  getData(Path: string): Observable<any> {
     return this.http.get(Path);
   }
 }
