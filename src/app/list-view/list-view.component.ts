@@ -13,6 +13,7 @@ export class ListViewComponent implements OnInit {
   ProductData: Array<object>;
   params: object;
   AllProd: Array<object>;
+  
   constructor(private Data: GetProdDataService, private router: Router, private ProdData: ProductServiceService) {
     this.ProductData = [];
     this.params = {
@@ -43,15 +44,18 @@ export class ListViewComponent implements OnInit {
     this.router.navigate(['/ProdView'], { queryParams: this.params })
   }
 
-
-
   sendDataToCart(i: object): void {
+
+    if(this.ProdData.sendItem != undefined)
+      {
+        console.log(this.ProdData.sendItem);
+        this.AllProd=this.ProdData.sendItem;       
+      }
     this.AllProd.push(i);
     console.log(this.AllProd);
     this.ProdData.sendItem = this.AllProd;
     // this.ProdData.sendItem.emit(this.AllProd);
   }
-
 
   ngOnInit() {
     this.getProductData();

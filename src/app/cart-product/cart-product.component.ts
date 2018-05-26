@@ -16,17 +16,12 @@ export class CartProductComponent implements OnInit {
 
   constructor(private ProdData: ProductServiceService, private router: Router) {
     console.log(this.all);
-    this.quantity = this.ProdData.Qty;
     // this.ProdData.sendItem.subscribe( (AllProd)=> {console.log(AllProd);} );  
   }
 
   //delete this prod
-  delFromCart(O: object): void {
-    let k = this.all.indexOf(O);
-    console.log(k);
-    for (let i = 0; i < this.all.length; i++) {
-      this.all.splice(k, 1);
-    }
+  delFromCart(O: number): void {
+      this.all.splice(O, 1);
   }
 
   //view detail
@@ -45,6 +40,15 @@ export class CartProductComponent implements OnInit {
   }
 
   ngOnInit() {
+
+    if(this.ProdData.Qty != undefined)
+      {
+        this.quantity = this.ProdData.Qty;
+      }
+      else
+        {
+          this.quantity = 1;
+        }
   }
 
 }

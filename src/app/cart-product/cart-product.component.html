@@ -6,7 +6,7 @@
 
 
           <div class="row w-100 media mt-4 pb-4" *ngFor="let prod of all ;let i=index;">
-            <img src={ {prod.Img}} class="col-md-4 col-xs-12 align-self-start mr-3 w-100" alt="placeholder image" />
+            <img src= {{prod.Img}} class="col-md-4 col-xs-12 align-self-start mr-3 w-100" alt="placeholder image" />
             <div class="col-md-8 col-xs-12 media-body">
               <h5>{{prod.Name}}</h5>
               <h6>{{prod.Price}}</h6>
@@ -15,11 +15,11 @@
                 <div class="mb-2 mb-4">
                   <div class="d-inline divIcon">
                     <label>Qantity :</label> <input class="form-control d-inline mt-4 w-50 text-center bg-transparent" type="number"
-                      min="1" (click)="onKey($event)" />
+                      min="1" (click)="onKey($event)" value= {{quantity}} />
                   </div>
                   <div class="d-inline divIcon"><i class="fa fa-eye" routerLink="/ProdView" (click)="redirectTo(prod)"></i>
                   </div>
-                  <div class="d-inline divIcon"><i class="fa fa-trash" routerLink="/CartProduct" (click)="delFromCart(prod)"></i>
+                  <div class="d-inline divIcon"><i class="fa fa-trash" routerLink="/CartProduct" (click)="delFromCart(i)"></i>
                   </div>
                 </div>
               </div>

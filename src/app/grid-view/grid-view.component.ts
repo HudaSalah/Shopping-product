@@ -11,9 +11,9 @@ import { ProductServiceService } from '../product-service.service';
 export class GridViewComponent implements OnInit {
 
   ProductData: Array<object>; // gay mn json
-  params: object; // htrp7 l view details
-  AllProd: Array<object>;
-
+  params: object; // htro7 l view details
+  AllProd: Array<object>; //to store data to send it to cart
+    
   constructor(private Data: GetProdDataService, private router: Router, private ProdData: ProductServiceService) {
     this.ProductData = [];
     this.params = {
@@ -23,9 +23,10 @@ export class GridViewComponent implements OnInit {
       categ: "",
       image: ""
     };
-    this.AllProd = [];
+    this.AllProd=[];
   }
 
+  //get data from json file
   getProductData(): void {
     let path: string = '../assets/product-data.json';
     this.Data.getData(path).subscribe(
@@ -38,14 +39,21 @@ export class GridViewComponent implements OnInit {
     );
   }
 
+  //to view single prod details
   redirectTo(i: object): void {
     console.log(i);
     this.params = i;
     this.router.navigate(['/ProdView'], { queryParams: this.params })
   }
 
-
+//to add prod to cart
   sendDataToCart(i: object): void {
+
+    if(this.ProdData.sendItem != undefined)
+      {
+        console.log(this.ProdData.sendItem);
+        this.AllProd=this.ProdData.sendItem;       
+      }
     this.AllProd.push(i);
     console.log(this.AllProd);
     this.ProdData.sendItem = this.AllProd;

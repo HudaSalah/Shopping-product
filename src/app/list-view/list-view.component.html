@@ -16,7 +16,7 @@
           </form>
 
           <div class="row w-100 media mt-4" *ngFor="let prod of ProductData | filter:filter; let i=index;">
-            <img class="col-md-4 col-xs-12 align-self-start mr-3 w-100" src={ {prod.Img}} alt="placeholder image">
+            <img class="col-md-4 col-xs-12 align-self-start mr-3 w-100" src= {{prod.Img}} alt="placeholder image">
             <div class="col-md-8 col-xs-12 media-body">
               <h5>{{prod.Name}}</h5>
               <h6>{{prod.Price}}</h6>

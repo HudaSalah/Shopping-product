@@ -9,7 +9,7 @@ import { ProductServiceService } from '../product-service.service';
 })
 export class ProdViewComponent implements OnInit {
 
-  Val: any = 1;
+  Val: any;
   ComeProduct: object = {};
 
   constructor(private active: ActivatedRoute, private ProdData: ProductServiceService) {
@@ -17,19 +17,30 @@ export class ProdViewComponent implements OnInit {
     console.log(this.ComeProduct);
   }
 
-  sendDataToCart(i: object): void {
-    this.ComeProduct = i;
-    this.ProdData.sendItem.push(this.ComeProduct);
+  sendDataToCart(): void {
+    console.log( this.ComeProduct );
+    this.ProdData.Qty = this.Val;
+    if((this.ProdData.sendItem != undefined) || (this.ProdData.sendItem == undefined ))
+      {
+        this.ProdData.sendItem.push(this.ComeProduct);
+      }
   }
 
 
   onKey(event: any): void {
     this.Val = event.target.value;
-    this.ProdData.Qty = this.Val;
     console.log(this.Val);
   }
 
   ngOnInit() {
+    if(this.ProdData.Qty != undefined)
+      {
+        this.Val = this.ProdData.Qty;
+      }
+      else
+        {
+          this.Val = 1;
+        }
   }
 
 }
